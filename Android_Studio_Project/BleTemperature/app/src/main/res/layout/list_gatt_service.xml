@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/gatt_service"
+            android:textSize="@dimen/note_size"/>
+
+        <TextView
+            android:id="@+id/gatt_service_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/gatt_service"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/service_uuid_bold"
+            android:textSize="@dimen/note_size"/>
+
+        <TextView
+            android:id="@+id/gatt_service_uuid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/gatt_service"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/characteristic_title"
+            android:textSize="@dimen/note_size"/>
+
+        <TextView
+            android:id="@+id/gatt_service_characteristic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/gatt_service"/>
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

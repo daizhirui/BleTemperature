@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginEnd="@dimen/default_margin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name_bold"
+            android:textSize="@dimen/note_size"/>
+
+        <TextView
+            android:id="@+id/characteristic_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/characteristic_title"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/uuid_bold"
+            android:textSize="@dimen/note_size"/>
+
+        <TextView
+            android:id="@+id/characteristic_uuid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/default_margin"
+            app:layout_constraintTop_toBottomOf="@id/characteristic_name"
+            android:text="@string/characteristic_title"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

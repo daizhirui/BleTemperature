@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.daizhirui.bletemperature">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <service
+            android:name=".BluetoothLeService"
+            android:enabled="true"
+            android:exported="true"/>
+
+        <activity android:name=".BluetoothLeBaseActivity"/>
+
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.daizhirui.bletemperature.ACTION_ADD_DEVICE_SERVICE_CHARACTERISTIC" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http"
+                    android:host="phylab.fudan.edu.cn"
+                    android:pathPattern="/app" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ScanBleDeviceActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.Dialog"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:name=".ScanGattServiceActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".SelectCharacteristicActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.Dialog"
+            android:excludeFromRecents="true"/>
+
+        <activity
+            android:name=".MonitorBleDeviceActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+    </application>
+
+</manifest>

@@ -1,0 +1,12 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="default_margin">8dp</dimen>
+
+    <dimen name="scanble_window_width">320dp</dimen>
+    <dimen name="scanble_window_height">400dp</dimen>
+
+    // font size
+    <dimen name="title_size">20sp</dimen>
+    <dimen name="note_size">16sp</dimen>
+    <dimen name="normal_size">14sp</dimen>
+</resources>

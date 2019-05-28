@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">BleTemperature</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_clear">Clear</string>
+    <string name="cancel_button_title">Cancel</string>
+    <string name="characteristic_title"><b>Characteristics</b></string>
+    <string name="characteristic_name_bold"><b>Characteristic Name</b></string>
+    <string name="characteristic_uuid_bold"><b>Characteristic UUID</b></string>
+    <string name="choose_a_characteristic">Please Choose A Characteristic (Notify)</string>
+    <string name="choose_a_service">Please Choose A Service With Characteristic (Notify)</string>
+    <string name="device_address">Device Address: </string>
+    <string name="device_address_bold"><b>Device Address</b></string>
+    <string name="device_listview_name"><b>Device List</b></string>
+    <string name="device_name_bold"><b>Device Name</b></string>
+    <string name="discovered_devices_listview_name">Discovered Devices</string>
+    <string name="empty">&lt;Empty&gt;</string>
+    <string name="gatt_service"><b>GATT Service</b></string>
+    <string name="gatt_service_characteristic_title_bold"><b>GATT Services &amp; Characteristics</b></string>
+    <string name="name_bold"><b>Name</b></string>
+    <string name="service_uuid_bold"><b>Service UUID</b></string>
+    <string name="scan_gatt_service_activity_title">GATT Scan Result</string>
+    <string name="refresh_button_title">Refresh</string>
+    <string name="unknown_device">Unknown</string>
+    <string name="unnamed">Unnamed</string>
+    <string name="uuid_bold"><b>UUID</b></string>
+
+
+</resources>

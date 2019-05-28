@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ScanGattServiceActivity"
+    tools:showIn="@layout/activity_scangatt">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginStart="@dimen/default_margin"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/device_name_bold"
+                android:textSize="@dimen/title_size"
+                android:layout_marginEnd="@dimen/default_margin"/>
+
+            <TextView
+                android:id="@+id/gatt_device_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/device_name_bold"
+                android:textSize="@dimen/note_size"
+                android:layout_marginEnd="@dimen/default_margin"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/device_address_bold"
+                android:textSize="@dimen/title_size"
+                android:layout_marginEnd="@dimen/default_margin"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:id="@+id/gatt_device_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/device_address"
+                android:textSize="@dimen/note_size"
+                android:layout_marginEnd="@dimen/default_margin"
+                android:layout_gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gatt_service_characteristic_title_bold"
+            android:textSize="@dimen/title_size"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_a_service"
+            android:textSize="@dimen/note_size"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_gravity="center_horizontal"/>
+
+        <ListView
+            android:id="@+id/gatt_service_characteristic_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin">
+
+        </ListView>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
