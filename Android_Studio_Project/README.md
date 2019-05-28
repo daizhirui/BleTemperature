@@ -54,6 +54,9 @@ Supported formatType from ```BluetoothGattCharacteristic```:
 - ```FORMAT_FLOAT```
 - ```FORMAT_SFLOAT```
 
+## Project Documentation
+
+[Documentation](../Documentation/index.html)
 ## Some useful material for learning about BLE
 
 * [GATT Specifications | Bluetooth Technology Website](https://www.bluetooth.com/specifications/gatt/)
