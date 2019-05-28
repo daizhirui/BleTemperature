@@ -9,5 +9,5 @@ In this project, we setup a temperature monitor based on Arduino Uno and Bluetoo
 
 ## How to setup
 
-* [**Phone End**](./Android_Studio_Project/README.md)
+* [**Phone End**](./Android_Studio_Project/)
 * [**Arduino End**](./ArduinoUno.DHT22/README.md)
