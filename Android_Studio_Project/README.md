@@ -56,7 +56,7 @@ Supported formatType from ```BluetoothGattCharacteristic```:
 
 ## Project Documentation
 
-[Documentation](../Documentation/index.html)
+[Documentation](https://daizhirui.github.io/BleTemperature/)
 ## Some useful material for learning about BLE
 
 * [GATT Specifications | Bluetooth Technology Website](https://www.bluetooth.com/specifications/gatt/)
